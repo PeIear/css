@@ -1,0 +1,289 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&di..'); 
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+body{
+    background-color: burlywood;
+    color:black;  
+    /* font-family: 'Roboto', sans-serif;  
+    font-size: 16px;
+    font-weight: normal; */
+
+    font: normal 16px 'Roboto', sans-serif;
+
+    
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+    /* * {
+        padding: 0;
+        margin: 0;
+    } */
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    /* Для того, чтобы отработать событие
+    наведения мышки на на какой-либо
+    бокс, используем элемент через двоеточие и
+     "действие" (в данном случае наведение, hover) */
+     a:hover {
+         text-decoration: underline;
+     }
+     /* Команда active для обозначения нажатия,
+     ссылка меняет цвет при нажатии на неё. Также
+     visited для уже посещенных сылок */
+     a:active {
+        color: rgb(148, 0, 141);
+     }
+     a:visited {
+         color: grey;
+     }
+
+     .bg-yellow {
+         background: rgba(247, 247, 129, 0.459);
+         border-radius: 28px;
+         box-shadow: 14px 17px 14px rgba(0, 0, 0, 0.25);
+
+     }
+
+     .bg-green {
+        background: rgba(138, 248, 138, 0.308);
+        border-radius: 28px;
+        box-shadow: 14px 17px 14px rgba(0, 0, 0, 0.25);
+     }
+    
+     .bg-red {
+         background: rgba(243, 129, 129, 0.438);
+         border-radius: 28px;
+         box-shadow: 14px 17px 14px rgba(0, 0, 0, 0.25);
+     }
+
+     .bg-blue {
+        background: rgba(133, 141, 245, 0.397);
+        border-radius: 28px;
+        box-shadow: 14px 17px 14px rgba(0, 0, 0, 0.25);
+    }
+
+     .card {
+        padding: 15px 20px;
+        /* background: red; */
+        margin-bottom: 20px;
+
+     }
+
+     .list {
+         padding: 0 20px;
+     }
+
+     .list li {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgb(17, 1, 1);
+     }
+     .table {
+        width: 100%;
+
+
+     }
+     .table .temp td{
+         color: blue;
+     }
+     /* Для выделения определенных столбцов можно
+      использовать псевдоселектор nth-child */
+     .table td:nth-child(2), .table td:nth-child(3) {
+         color: red;
+     }
+     /* Также с помощью команд even и odd можно
+      работать с четными и нечетными столбцами (td)
+      или строчками (tr) */
+     /* .table td:nth-child(even) {
+         background: greenyellow;
+     } */
+     .table tr:nth-child(odd) {
+         background: greenyellow;
+     }
+
+    .avka {
+        width: 240px;
+        border-radius: 28px;
+        box-shadow: 14px 17px 14px rgba(0, 0, 0, 0.25);
+    }
+    .info   {
+        display: flex;
+        /* margin-left: 10px; */
+    }
+    .info-text{
+        margin-left: 30px;
+
+    }
+    .info-text h4 {
+        margin-bottom: 10px;
+    }
+    .info p {
+        color: rgb(87, 0, 72);
+        margin: 0;
+        /* font-style: italic; */
+        font-weight: bold;
+        text-decoration: none;
+        /* text-transform: uppercase; */
+        /* letter-spacing: 5px; */
+        /* word-spacing: 42px; */
+    }
+    /* .social {
+        background: yellow;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-bottom: 25px;
+        padding-right: 30px;
+        border: 5px solid greenyellow;
+        border-bottom-style: double;
+        border-top-width: 15px;
+        margin: 15px;
+    } */
+
+    .container {
+        /* max-width: 750px; */
+        position:relative;
+        /* left: 50%; */
+        /* margin-right: -50%; */
+        /* transform: translate(-50%, -25%); */
+        justify-content: center;
+        margin:5%;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+    .container h2 {
+        text-indent: 30px;
+        /* text-align: center; */
+    }
+    .container p {
+        text-indent: 30px;
+        text-align:justify;
+        /* text-align: start; */
+        /* text-align: unset; */
+        /* padding: 5%; */
+    }
+
+    .contact h2 {
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        border: 20px;
+        text-indent: 30px;
+        /* padding-left: ; */
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 14px;
+        color: blue;
+        /* margin-left: 30px; */
+    }
+    .forma label {
+        display: block;
+        font-size: 14px;
+        color: blue;
+    }
+    .form-group input
+    , .form-group textarea 
+     {
+    width: 87%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    /* margin-left: 30px;  */
+    }
+.forma textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid gray;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+    .form-group textarea { 
+        /* margin-left: 30px; */
+        margin-right: 5px;
+        width: 100%;
+     }
+     .submit {
+         margin-left: 30px;
+         margin-top: 30px;
+         width: 90%;
+     }
+     .click {
+        text-align: center;
+        
+     }
+     .click > input { 
+            justify-content: center;
+         text-align: center;
+         /* margin-left: 0; */
+         /* width: %; */
+         margin-bottom: 20px;
+         background: rgba(247, 247, 129, 0.459);
+         border-radius: 28px;
+         box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.25);
+         font-family: inherit;
+      }
+      .click > input:hover {
+          background: black;
+          color: white;
+
+      }
+     /* .input {
+         margin-left: 20px;
+        width: 100%;
+
+     } */
+     .row    {
+        display: flex;
+        /* margin-bottom: 50px; */
+        /* margin-left: 20px; */
+    }
+    .row > .form-group    {
+        /* .row div {     */
+         width: 50%;
+        margin-right: 10px;
+        margin-left: 30px;
+    }
+    .row >.form-group:last-child {
+        margin-right: 0%;
+        margin-left: 30px;
+    } 
+    /* .box-model div использовать для охвата
+     абсолютно всех блоков, встроенных в общий блок
+     "box-model". Для охвата только первого
+     "поколения" блоков использовать
+      .box-model > div*/
+    /*.box-model > div {
+        width:25%;
+        background: black;
+        height: 200px;
+        float: left;
+        border: 4px solid   red;
+        box-sizing: border-box;
+
+
+    }
+*/
+
+
+
+
+
+
+
+
